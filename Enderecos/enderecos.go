@@ -17,7 +17,7 @@ func TipoDeEndereco(endereco string) string {
 	}
 
 	if enderecoValido {
-		enderecoFormatadoSaida := strings.Title(primeiraPalavra)
+		enderecoFormatadoSaida := strings.ToTitle(primeiraPalavra)
 		return enderecoFormatadoSaida
 	}
 
