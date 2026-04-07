@@ -7,6 +7,7 @@ import (
 )
 
 func TestTipoDeEndereco(t *testing.T) {
+	t.Parallel()
 	enderecoParaTeste := "Rua das Flores"
 	TipoDeEnderecoEsperado := "Rua"
 	tipoDeEnderecoRecebido := strings.ToTitle(TipoDeEndereco(enderecoParaTeste))

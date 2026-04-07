@@ -1,6 +1,8 @@
 package enderecos
 
-import "testing"
+import (
+	"testing"
+)
 
 // Teste de Unidade para a função TipoDeEndereco do pacote enderecos
 type cenarioTest struct {
@@ -10,6 +12,7 @@ type cenarioTest struct {
 
 // TipoDeEndereco recebe um endereço como string e retorna o tipo de endereço (Rua, Avenida, Alameda, Travessa) ou uma mensagem de erro se o tipo for inválido.
 func TipoDeEnderecoTwo(t *testing.T) string {
+	t.Parallel()
 	cenariosDeTest := []cenarioTest{
 		{enderecoParaTeste: "Rua das Flores", TipoDeEnderecoEsperado: "Rua"},
 		{enderecoParaTeste: "Avenida Paulista", TipoDeEnderecoEsperado: "Avenida"},
